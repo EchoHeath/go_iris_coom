@@ -20,25 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b59e5ecb-a588-402f-979a-47e9b712ee23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/web/views/shared/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/web/views/shared/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datamodels/product.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repositories/product_product.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/movie.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamodels/student.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamodels/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/datamodels/product.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/movie_repository.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/student_respository.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/movie_service.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/student_service.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/movie_controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/controllers/student_controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/movie/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/student/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repositories/product_product.go" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/product_product.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
