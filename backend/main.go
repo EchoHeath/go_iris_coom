@@ -8,7 +8,7 @@ func main() {
 	//iris实例化
 	app := iris.New()
 	//设置错误模式
-	app.Logger().Debug("debug")
+	app.Logger().SetLevel("debug")
 	//注册模板
 	template := iris.HTML("./backend/web/views", ".html").Layout("shared/layout.html").Reload(true)
 	app.RegisterView(template)
