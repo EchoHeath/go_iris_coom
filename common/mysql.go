@@ -18,10 +18,10 @@ func GetResultRow(rows *sql.Rows) map[string]string{
 	values := make([][]byte, len(columns))
 	for j := range values {
 		scanArgs[j] = &values[j]
-	}
+	}	
 	record := make(map[string]string)
 	for rows.Next() {
-		//将行数据保存到record字典
+		//将行数据保存到record字典 
 		rows.Scan(scanArgs...)
 		for i, v := range values {
 			if v != nil {

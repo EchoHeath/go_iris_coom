@@ -1,7 +1,14 @@
 package main
 
 import (
+	"context"
 	"github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12/mvc"
+	"github.com/opentracing/opentracing-go/log"
+	"go-electricity/backend/web/controllers"
+	"go-electricity/common"
+	"go-electricity/repositories"
+	"go-electricity/services"
 )
 
 func main() {
@@ -20,7 +27,23 @@ func main() {
 		ctx.ViewLayout("")
 		ctx.View("shard/error.html")
 	})
+
+	//连接数据库
+	db, err := common.NewMysqlConn()
+	if err != nil {
+		log.Error(nil)
+	}
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
 	//注册控制器
+	productRepository := repositories.NewProductManager("product", db)
+	productService := services.NewProductService(productRepository)
+	productParty := app.Party("/product")
+	product := mvc.New(productParty)
+	product.Register(ctx, productService)
+	product.Handle(new(controllers.ProductController))
+
 	//启动服务
 	app.Run(
 		iris.Addr("localhost:8080"),
